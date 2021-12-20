@@ -82,12 +82,12 @@ a:hover {
 #hero .btn-scroll:hover {
   color: rgb(255, 255, 255);
 }
-
-@media (min-width: 1024px) {
+/*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
+/* @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-}
+} */
 @media (max-width: 575px) {
   #hero h1 {
     font-size: 40px;
@@ -118,9 +118,51 @@ a:hover {
 
 /* ABOUT ME SECTION */
 
-.img-aboutme {
-  background-image: url(../assets/img/blob.svg);
-  background-size: cover;
-  height: 100%;
-  margin: 0 50px 0 50px;
+#about {
+  background-color: #0b0b0b;
+}
+#about .about-container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#about h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#about p {
+  color: rgb(95, 95, 95);
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.me-social {
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 200%;
+}
+
+.me-social:hover {
+  color: #a0a0a0;
+}
+
+/*MY SKILLS SECTION*/
+#skills {
+  background-color: #0b0b0b;
+}
+#skills .skills-container {
+  padding: 8%;
+}
+#skills h3 {
+  color: rgb(95, 95, 95);
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
