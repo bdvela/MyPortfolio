@@ -100,7 +100,7 @@ a:hover {
 
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(-5px);
@@ -161,8 +161,145 @@ a:hover {
 }
 #skills h3 {
   color: rgb(95, 95, 95);
-
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+/* RECENT WORKS */
+
+#works {
+  background-color: #0b0b0b;
+}
+
+#works .card-text {
+  background-color: #0b0b0b00;
+}
+
+#works a {
+  text-decoration: none;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000a6;
+}
+.card-project {
+  overflow: hidden;
+}
+#works .card-project:hover .imagen {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+#works .card-project:hover .overlay {
+  opacity: 1;
+}
+
+#works .icon {
+  color: white;
+  font-size: 200%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* CONTACT ME SECTION */
+
+#contact {
+  background-color: #0b0b0b;
+}
+#contact .card {
+  padding: 5rem;
+  top: -30px;
+}
+.me-contact {
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 200%;
+}
+
+#contact p {
+  color: rgb(95, 95, 95);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* FOOTER */
+#footer {
+  /* background: url('../img/footer-bg.jpg') top center no-repeat; */
+  background-color: #0b0b0b;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+}
+#footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-color: #0b0b0b;
+}
+#footer .container {
+  position: relative;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #000000;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+#footer .credits {
+  font-size: 13px;
 }
