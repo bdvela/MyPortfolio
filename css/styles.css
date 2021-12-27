@@ -1,10 +1,12 @@
 a {
-  color: #6123d4;
+  color: #4834c5;
   text-decoration: none;
 }
-
+span {
+  color: #4834c5;
+}
 a:hover {
-  color: #4f15b9;
+  color: #4834c5;
   text-decoration: none;
 }
 
@@ -46,12 +48,13 @@ a:hover {
   bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 0 6rem;
+}
+#hero .hero-container a {
+  width: fit-content;
 }
 
 #hero h1 {
@@ -62,7 +65,7 @@ a:hover {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -71,29 +74,32 @@ a:hover {
 
 #hero .btn-scroll {
   transition: 0.4s;
-  color: rgba(255, 255, 255, 0.6);
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
-
-#hero .btn-scroll i {
-  font-size: 48px;
+#hero .btn-style {
+  background-color: #4834c5 !important;
+  border-color: #4834c5 !important;
 }
 
-#hero .btn-scroll:hover {
-  color: rgb(255, 255, 255);
+#hero .btn-style:hover {
+  background-color: #372899 !important;
+  border-color: #372899 !important;
+}
+
+#hero .btn-style:active {
+  box-shadow: none;
 }
 /*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-} */
+}
 @media (max-width: 575px) {
   #hero h1 {
     font-size: 40px;
   }
   #hero h2 {
-    text-align: center;
     margin-bottom: 30px;
   }
 }
@@ -119,7 +125,7 @@ a:hover {
 /* ABOUT ME SECTION */
 
 #about {
-  background-color: #0b0b0b;
+  background-color: #0e0e0f;
 }
 #about .about-container {
   padding-left: 3%;
@@ -143,18 +149,17 @@ a:hover {
 }
 .me-social {
   color: white;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-right: 4%;
   font-size: 200%;
 }
 
 .me-social:hover {
-  color: #8a8a8a;
+  color: #4834c5;
 }
 
 /*MY SKILLS SECTION*/
 #skills {
-  background-color: #0b0b0b;
+  background-color: #0e0e0f;
 }
 #skills .skills-container {
   padding: 8%;
@@ -169,7 +174,7 @@ a:hover {
 /* RECENT WORKS */
 
 #works {
-  background-color: #0b0b0b;
+  background-color: #0e0e0f;
 }
 
 #works .card-text {
@@ -204,6 +209,10 @@ a:hover {
   opacity: 1;
 }
 
+#works .subtitle {
+  color: rgb(95, 95, 95);
+}
+
 #works .icon {
   color: white;
   font-size: 200%;
@@ -217,7 +226,7 @@ a:hover {
 /* CONTACT ME SECTION */
 
 #contact {
-  background-color: #0b0b0b;
+  background-color: #0e0e0f;
 }
 #contact .card {
   padding: 5rem;
@@ -256,7 +265,7 @@ a:hover {
   top: 0;
   bottom: 0;
 
-  background-color: #0b0b0b;
+  background-color: #0e0e0f;
 }
 #footer .container {
   position: relative;
