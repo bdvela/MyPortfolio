@@ -100,6 +100,9 @@ a:hover {
   }
 } */
 @media (max-width: 575px) {
+  #hero {
+    padding: 0 2rem;
+  }
   #hero h1 {
     font-size: 40px;
   }
