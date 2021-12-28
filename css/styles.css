@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 a {
   color: #4834c5;
   text-decoration: none;
@@ -28,13 +32,14 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url('../assets/img/hero-bg-2.jpg') top right;
+  background: url('../assets/img/hero-bg.jpg') top right;
   background-size: cover;
   position: relative;
 }
 
 #hero::before {
-  background: rgba(0, 0, 0, 0.13);
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -59,13 +64,11 @@ a:hover {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 0 0.1em rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 #hero h2 {
-  color: rgb(0, 0, 0);
-  text-shadow: 0 0 1em rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.63);
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -91,11 +94,11 @@ a:hover {
   box-shadow: none;
 }
 /*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-}
+} */
 @media (max-width: 575px) {
   #hero h1 {
     font-size: 40px;
@@ -126,11 +129,11 @@ a:hover {
 /* ABOUT ME SECTION */
 
 #about {
-  background-color: #181818;
+  background-color: #0e0d0d;
 }
 #about .about-container {
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 5%;
 }
 #about h2 {
   color: #eee;
@@ -158,6 +161,20 @@ a:hover {
   color: #4834c5;
 }
 
+@media (max-width: 575px) {
+  #about {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  #about h1 {
+    font-size: 40px;
+  }
+  #about h2 {
+    margin-bottom: 30px;
+  }
+}
+
 /*MY SKILLS SECTION*/
 
 #skills {
@@ -166,15 +183,12 @@ a:hover {
   background-size: cover;
   position: relative;
 }
-/*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
-@media (min-width: 1024px) {
-  #skills {
-    background-attachment: fixed;
-  }
+.progress-bar {
+  -webkit-transition: width 2.5s ease;
+  transition: width 2.5s ease;
 }
-
 #skills::before {
-  background: rgba(0, 0, 0, 0.13);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -190,7 +204,7 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 8%;
+  padding: 7%;
 }
 
 #skills h2 {
@@ -209,6 +223,19 @@ a:hover {
   letter-spacing: 1px;
 }
 
+@media (max-width: 575px) {
+  #skills {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  #skills h1 {
+    font-size: 40px;
+  }
+  #skills h2 {
+    margin-bottom: 30px;
+  }
+}
 /* RECENT WORKS */
 
 #works {
@@ -249,7 +276,7 @@ a:hover {
 }
 
 #works .subtitle {
-  color: rgb(95, 95, 95);
+  color: rgb(182, 182, 182);
 }
 
 #works .icon {
@@ -264,6 +291,19 @@ a:hover {
 
 #works .works-container {
   padding: 8%;
+}
+@media (max-width: 575px) {
+  #works {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  #works h1 {
+    font-size: 40px;
+  }
+  #works h2 {
+    margin-bottom: 30px;
+  }
 }
 
 /* CONTACT ME SECTION */
