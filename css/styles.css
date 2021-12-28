@@ -28,14 +28,13 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url('../assets/img/hero-bg.jpg') top right;
+  background: url('../assets/img/hero-bg-2.jpg') top right;
   background-size: cover;
   position: relative;
 }
 
 #hero::before {
-  content: '';
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.13);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -51,7 +50,7 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 6rem;
+  padding: 0 7rem;
 }
 #hero .hero-container a {
   width: fit-content;
@@ -60,11 +59,13 @@ a:hover {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 0.1em rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255);
 }
 
 #hero h2 {
-  color: #eee;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 1em rgb(255, 255, 255);
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -125,7 +126,7 @@ a:hover {
 /* ABOUT ME SECTION */
 
 #about {
-  background-color: #0e0e0f;
+  background-color: #181818;
 }
 #about .about-container {
   padding-left: 3%;
@@ -134,7 +135,7 @@ a:hover {
 #about h2 {
   color: #eee;
   margin-bottom: 50px;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -158,12 +159,49 @@ a:hover {
 }
 
 /*MY SKILLS SECTION*/
+
 #skills {
-  background-color: #0e0e0f;
+  width: 100%;
+  background: url('../assets/img/hero-bg-1.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
 }
-#skills .skills-container {
+/*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
+@media (min-width: 1024px) {
+  #skills {
+    background-attachment: fixed;
+  }
+}
+
+#skills::before {
+  background: rgba(0, 0, 0, 0.13);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#skills .hero-container {
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 8%;
 }
+
+#skills h2 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 #skills h3 {
   color: rgb(95, 95, 95);
   font-size: 14px;
@@ -174,7 +212,8 @@ a:hover {
 /* RECENT WORKS */
 
 #works {
-  background-color: #0e0e0f;
+  background-color: #181818;
+  padding: 5%;
 }
 
 #works .card-text {
@@ -223,27 +262,55 @@ a:hover {
   -ms-transform: translate(-50%, -50%);
 }
 
+#works .works-container {
+  padding: 8%;
+}
+
 /* CONTACT ME SECTION */
 
 #contact {
-  background-color: #0e0e0f;
+  background-color: #181818;
 }
 #contact .card {
-  padding: 5rem;
-  top: -30px;
+  background-color: #ecedf1;
+  border-radius: 10px;
+  padding: 10rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+@media (max-width: 575px) {
+  #contact .card {
+    padding: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+
 .me-contact {
-  color: white;
+  color: #4834c5;
   margin-left: 2%;
   margin-right: 2%;
   font-size: 200%;
 }
-
+#contact h5 {
+  color: #000000;
+}
 #contact p {
   color: rgb(95, 95, 95);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+#contact .btn-style {
+  border-color: #4834c5 !important;
+  color: #4834c5;
+}
+
+#contact .btn-style:hover {
+  background-color: #4834c5 !important;
+  border-color: #4834c5 !important;
+  color: white;
 }
 
 /* FOOTER */
@@ -264,12 +331,12 @@ a:hover {
   right: 0;
   top: 0;
   bottom: 0;
-
-  background-color: #0e0e0f;
+  background-color: #181818;
 }
 #footer .container {
   position: relative;
 }
+
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
