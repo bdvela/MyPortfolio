@@ -17,9 +17,43 @@ const typed = new Typed('.typed', {
   contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+//NAVBAR CHANGE ON CLICK
+$('.nav-item .nav-link').on('click', function () {
+  $('.nav-item').find('.active').removeClass('active');
+  $(this).addClass('active');
+});
+
+//NAVBAR CHANGE ON SCROLL
+$(window)
+  .scroll(function () {
+    var distance = $(window).scrollTop();
+    $('.page-section').each(function (i) {
+      if ($(this).position().top <= distance + 250) {
+        $('.navbar-nav a.active').removeClass('active');
+
+        $('.navbar-nav a').eq(i).addClass('active');
+      }
+    });
+  })
+  .scroll();
+
 //PROGRESS BAR ANIMATION
-$('.bar-1').css('width', '75%');
-$('.bar-2').css('width', '50%');
-$('.bar-3').css('width', '60%');
-$('.bar-4').css('width', '60%');
-$('.bar-5').css('width', '55%');
+// $('.bar-1').css('width', '75%');
+// $('.bar-2').css('width', '50%');
+// $('.bar-3').css('width', '60%');
+// $('.bar-4').css('width', '60%');
+// $('.bar-5').css('width', '55%');
+$(window)
+  .scroll(function () {
+    var distance = $(window).scrollTop();
+    $('#skills').each(function (i) {
+      if ($(this).position().top <= distance + 250) {
+        $('.bar-1').css('width', '75%');
+        $('.bar-2').css('width', '50%');
+        $('.bar-3').css('width', '60%');
+        $('.bar-4').css('width', '60%');
+        $('.bar-5').css('width', '55%');
+      }
+    });
+  })
+  .scroll();
