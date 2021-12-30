@@ -339,15 +339,21 @@
             </div>
             <div class="col-lg-6">
               <h2 class="mb-5">Contact Me</h2>
-              <form class="row mt-4">
+              <form class="row mt-4 needs-validation" action="https://formsubmit.co/bdvela20@gmail.com" method="POST" novalidate >
+                <input type="hidden" name="_next" value="https://bdvela.com/ty.html">
+                <input type="hidden" name="_captcha" value="false">
                 <div class="col-lg-6">
                   <div class="mb-4">
                     <input
                       type="email"
                       class="form-control"
-                      id="exampleFormControlInput1"
+                      id="email"
+                      name="email"
                       placeholder="Email"
+                      required
                     />
+                    <div class="valid-feedback">Campo OK</div>
+                    <div class="invalid-feedback">Complete los datos</div>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -355,9 +361,13 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleFormControlInput1"
+                      id="name"
+                      name="name"
                       placeholder="Name"
+                      required
                     />
+                    <div class="valid-feedback">Campo OK</div>
+                    <div class="invalid-feedback">Complete los datos</div>
                   </div>
                 </div>
                 <div class="col-lg">
@@ -365,18 +375,27 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleFormControlInput1"
+                      id="subject"
+                      name="subject"
                       placeholder="Subject"
                     />
+                    <div class="valid-feedback">Campo OK</div>
+                 
                   </div>
+                  
                 </div>
                 <div class="mb-4">
                   <textarea
                     class="form-control"
-                    id="exampleFormControlTextarea1"
+                    id="message"
+                    name="message"
                     rows="3"
                     placeholder="Your Message"
+                    required
+                    
                   ></textarea>
+                  <div class="valid-feedback">Campo OK</div>
+                  <div class="invalid-feedback">Complete los datos</div>
                 </div>
                 <div>
                   <button
@@ -385,6 +404,7 @@
                   >
                     Send Message
                   </button>
+                  
                 </div>
               </form>
             </div>
