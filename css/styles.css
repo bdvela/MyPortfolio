@@ -237,7 +237,7 @@ a:hover {
   padding-right: 5%;
 }
 #about h2 {
-  color: #eee;
+  color: #ffffff;
   margin-bottom: 50px;
   font-size: 36px;
   font-weight: 500;
@@ -245,6 +245,14 @@ a:hover {
   text-transform: uppercase;
 }
 
+u {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: overline;
+  text-decoration-color: #4834c5;
+}
 #about p {
   color: rgb(110, 110, 110);
   margin-bottom: 50px;
@@ -253,7 +261,7 @@ a:hover {
   letter-spacing: 1px;
 }
 .me-social {
-  color: white;
+  color: #ffffff;
   margin-right: 4%;
   font-size: 200%;
 }
@@ -267,6 +275,16 @@ a:hover {
     text-align: center;
     padding-top: 30%;
     padding-bottom: 30%;
+  }
+  #about .items-social {
+    text-align: center;
+  }
+  #about .me-social {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #about .btn-cv {
+    text-align: center;
   }
   #about h1 {
     font-size: 40px;
