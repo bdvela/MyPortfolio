@@ -1,2 +1,2 @@
-# [bdvela.com | My Portfolio](https://bdvela.com/)
+# My Portfolio : [bdvela.com](https://bdvela.com/)
 ![bdvela](screenshot.png)
