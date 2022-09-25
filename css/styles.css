@@ -274,6 +274,9 @@ u {
     #skills h2 {
         margin-bottom: 30px;
     }
+    #skills #circle {
+        position: relative;
+    }
 }
 /* RECENT WORKS */
 
