@@ -1,100 +1,100 @@
 a {
-  color: #4834c5;
-  text-decoration: none;
+    color: #4834c5;
+    text-decoration: none;
 }
 span {
-  color: #4834c5;
+    color: #4834c5;
 }
 a:hover {
-  color: #4834c5;
-  text-decoration: none;
+    color: #4834c5;
+    text-decoration: none;
 }
 
 #header {
-  z-index: 997;
-  transition: all 0.5s;
-  background: rgba(18, 18, 19, 0.8);
+    z-index: 997;
+    transition: all 0.5s;
+    background: rgba(18, 18, 19, 0.8);
 }
 
 /* NAVBAR SECTION */
 .navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
 }
 
 /* HERO SECTION */
 #hero {
-  width: 100%;
-  height: 100vh;
-  background: url('../assets/img/hero-bg.jpg') top right;
-  background-size: cover;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/img/hero-bg.jpg') top right;
+    background-size: cover;
+    position: relative;
 }
 #hero span {
-  color: rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.63);
 }
 #hero::before {
-  content: '';
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 7rem;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 7rem;
 }
 #hero .hero-container a {
-  width: fit-content;
+    width: fit-content;
 }
 
 #hero .wdd {
-  font-style: normal;
+    font-style: normal;
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
-  color: rgb(255, 255, 255);
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    color: rgb(255, 255, 255);
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.63);
-  margin-bottom: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.63);
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 #hero .btn-scroll {
-  transition: 0.4s;
-  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+    transition: 0.4s;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 #hero .btn-style {
-  background-color: #4834c5 !important;
-  border-color: #4834c5 !important;
+    background-color: #4834c5 !important;
+    border-color: #4834c5 !important;
 }
 
 #hero .btn-style:hover {
-  background-color: #372899 !important;
-  border-color: #372899 !important;
+    background-color: #372899 !important;
+    border-color: #372899 !important;
 }
 
 #hero .btn-style:active {
-  box-shadow: none;
+    box-shadow: none;
 }
 /*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
 /* @media (min-width: 1024px) {
@@ -103,352 +103,368 @@ a:hover {
   }
 } */
 @media (max-width: 575px) {
-  #hero .hero-container {
-    margin: 0 2rem;
-  }
-  #hero h1 {
-    font-size: 40px;
-  }
-  #hero h2 {
-    margin-bottom: 30px;
-  }
+    #hero .hero-container {
+        margin: 0 2rem;
+    }
+    #hero h1 {
+        font-size: 40px;
+    }
+    #hero h2 {
+        margin-bottom: 30px;
+    }
 }
 
 @-webkit-keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 @keyframes up-down {
-  0% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
+    0% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 /* ABOUT ME SECTION */
 
 #about {
-  background-color: #0e0d0d;
+    background-color: #0e0d0d;
 }
 #about .about-container {
-  padding-left: 2%;
-  padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 5%;
 }
 #about h2 {
-  color: #ffffff;
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 u {
-  font-size: 36px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: overline;
-  text-decoration-color: #4834c5;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-decoration-color: #4834c5;
 }
 #about p {
-  color: rgb(110, 110, 110);
-  margin-bottom: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
+    color: rgb(110, 110, 110);
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .me-social {
-  color: #ffffff;
-  margin-right: 4%;
-  font-size: 200%;
+    color: #ffffff;
+    margin-right: 4%;
+    font-size: 200%;
 }
 
 .me-social:hover {
-  color: #4834c5;
+    color: #4834c5;
 }
 
 @media (max-width: 575px) {
-  #about {
-    text-align: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
-  }
-  #about .items-social {
-    text-align: center;
-  }
-  #about .me-social {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  #about .btn-cv {
-    text-align: center;
-  }
-  #about h1 {
-    font-size: 40px;
-  }
-  #about h2 {
-    margin-bottom: 30px;
-  }
+    #about {
+        text-align: center;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+    #about .items-social {
+        text-align: center;
+    }
+    #about .me-social {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #about .btn-cv {
+        text-align: center;
+    }
+    #about h1 {
+        font-size: 40px;
+    }
+    #about h2 {
+        margin-bottom: 30px;
+    }
 }
 
 /*MY SKILLS SECTION*/
 
 #skills {
-  width: 100%;
-  height: 100vh;
-  background: url('../assets/img/hero-bg-skills.jpg') no-repeat;
-  background-size: cover;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/img/hero-bg-skills.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .progress-bar {
-  -webkit-transition: width 2.5s ease;
-  transition: width 2.5s ease;
+    -webkit-transition: width 2.5s ease;
+    transition: width 2.5s ease;
 }
 #skills::before {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #skills .hero-container {
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 7%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7%;
+}
+
+#skills .skills-item {
+    position: absolute;
+}
+
+#skills #circle {
+    background-color: rgb(224, 224, 224);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#skills #circle > h3 {
+    position: absolute;
+    margin-top: 200px;
+}
+
+#skills #circle > img {
+    width: 80px;
+    text-align: center;
 }
 
 #skills h2 {
-  color: rgb(0, 0, 0);
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 #skills h3 {
-  color: rgb(110, 110, 110);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 575px) {
-  #skills {
-    text-align: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
-  }
-  #skills h1 {
-    font-size: 40px;
-  }
-  #skills h2 {
-    margin-bottom: 30px;
-  }
+    #skills h2 {
+        margin-bottom: 30px;
+    }
 }
 /* RECENT WORKS */
 
 #works {
-  background-color: #181818;
-  padding: 5%;
+    background-color: #181818;
+    padding: 5%;
 }
 
 #works .card-text {
-  background-color: #0b0b0b00;
+    background-color: #0b0b0b00;
 }
 
 #works a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #000000a6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #000000a6;
 }
 .card-project {
-  overflow: hidden;
+    overflow: hidden;
 }
 #works .card-project:hover .imagen {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
 #works .card-project:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 #works .subtitle {
-  color: rgb(110, 110, 110);
+    color: rgb(110, 110, 110);
 }
 
 #works .icon {
-  color: white;
-  font-size: 200%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 #works .works-container {
-  padding: 8%;
+    padding: 8%;
 }
 @media (max-width: 575px) {
-  #works {
-    text-align: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
-  }
-  #works h1 {
-    font-size: 40px;
-  }
-  #works h2 {
-    margin-bottom: 30px;
-  }
+    #works {
+        text-align: center;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+    #works h1 {
+        font-size: 40px;
+    }
+    #works h2 {
+        margin-bottom: 30px;
+    }
 }
 
 /* CONTACT ME SECTION */
 
 #contact {
-  background-color: #080808;
-  padding-top: 5%;
-  padding-bottom: 5%;
+    background-color: #080808;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 #contact .card {
-  background-color: #ecedf1;
-  border-radius: 10px;
-  padding: 10rem;
-  margin-left: 5%;
-  margin-right: 5%;
+    background-color: #ecedf1;
+    border-radius: 10px;
+    padding: 10rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 @media (max-width: 575px) {
-  #contact .card {
-    padding: 0;
-    padding-top: 15%;
-    padding-bottom: 15%;
-  }
+    #contact .card {
+        padding: 0;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
 }
 
 .me-contact {
-  color: #4834c5;
-  margin-left: 2%;
-  margin-right: 2%;
-  font-size: 200%;
+    color: #4834c5;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 200%;
 }
 #contact h5 {
-  color: #000000;
+    color: #000000;
 }
 #contact p {
-  color: rgb(110, 110, 110);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 #contact .btn-style {
-  border-color: #4834c5 !important;
-  color: #4834c5;
+    border-color: #4834c5 !important;
+    color: #4834c5;
 }
 
 #contact .btn-style:hover {
-  background-color: #4834c5 !important;
-  border-color: #4834c5 !important;
-  color: white;
+    background-color: #4834c5 !important;
+    border-color: #4834c5 !important;
+    color: white;
 }
 
 /* FOOTER */
 #footer {
-  background: url('../assets/img/hero-bg-footer.jpg') bottom right no-repeat;
-  background-color: #0b0b0b;
-  background-size: cover;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 80px 0;
-  position: relative;
+    background: url('../assets/img/hero-bg-footer.jpg') bottom right no-repeat;
+    background-color: #0b0b0b;
+    background-size: cover;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
 }
 #footer::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #000000c5;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000c5;
 }
 #footer .container {
-  position: relative;
+    position: relative;
 }
 
 #footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  position: relative;
-  padding: 0;
-  margin: 0 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
 }
 #footer p {
-  color: rgb(110, 110, 110);
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+    color: rgb(110, 110, 110);
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
 }
 #footer .social-links {
-  margin: 0 0 40px 0;
+    margin: 0 0 40px 0;
 }
 #footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #000000;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+    font-size: 18px;
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #4834c5;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+    background: #4834c5;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 #footer .copyright {
-  margin: 0 0 5px 0;
+    margin: 0 0 5px 0;
 }
 #footer .credits {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 /*SIRVE PARA QUE EL FONDO NO SE MUEVE AL SCROLLEAR*/
 @media (min-width: 1024px) {
-  #footer {
-    background-attachment: fixed;
-  }
+    #footer {
+        background-attachment: fixed;
+    }
 }
